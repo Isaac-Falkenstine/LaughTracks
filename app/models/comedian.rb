@@ -34,6 +34,6 @@ class Comedian < ActiveRecord::Base
 
   def self.cities(params = {})
     comics = assess_params(params)
-    comics.distinct.pluck(:hometown)
+    comics.distinct.pluck(:city)
   end
 end

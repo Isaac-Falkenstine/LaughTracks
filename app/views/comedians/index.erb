@@ -34,15 +34,15 @@
   <span class="comedian" id='<%=comedian.id%>'>
     <h2><%= comedian.name %></h2>
       <p>Age: <%= comedian.age %></p>
-      <p>City: <%= comedian.hometown %></p>
+      <p>City: <%= comedian.city %></p>
       <p>Total Specials: <%= comedian.specials.count%> </p>
       <% if comedian.specials %>
         <span class='specials'>
           <% comedian.specials.each do |special| %>
             <span class='special'>
-              <img src='<%=special.image%>' alt='<%=special.name%>'>
+              <img src='<%=special.image%>' alt='<%=special.title%>'>
               <span class="details">
-                <p class="title"><%=special.name%></p>
+                <p class="title"><%=special.title%></p>
                 <p class="runtime">Length: <%=special.runtime%> minutes</p>
               </span>
             </span>
