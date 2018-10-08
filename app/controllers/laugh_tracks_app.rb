@@ -1,9 +1,17 @@
 class LaughTracksApp < Sinatra::Base
+
   get '/comedians' do
-    @comedians = Comedian.all
-    erb :"comedians/index"
+    comedians = Comedian.assess_params(params)
+    specials  = comedians.find_specials
+    erb :"comedians/index",
+        locals: { comedians: comedians,
+                  specials:  specials   }
   end
-  #
+
+
+  get '/comedians/new' do
+    erb :"comedians/new", :layout => :layout
+  end
   # get '/comedians/new' do
   #   erb :"comedians/new"
   # end
