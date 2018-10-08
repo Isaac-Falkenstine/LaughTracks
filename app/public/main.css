@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://www.freegreatpicture.com/files/photo65/32215-stage-background.jpg);
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4GTMiRxFeijvy2o2m/opening-red-curtain-with-alpha-chanel-included_niqinu0kx__F0000.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -27,7 +27,7 @@ h3 {
 }
 
 .container {
-  background-color: #F2FCFB;
+  background-color: #a9b0af;
   border: 3px solid black;
 }
 
@@ -56,7 +56,7 @@ h3 {
 
 
 #stats-container {
-  width: 94%;
+  width: 93%;
   text-align: center;
   padding-left: 3%;
   padding-right: 3%;
@@ -75,7 +75,7 @@ h3 {
 }
 
 #cities {
-  width: 60%;
+  width: 55%;
   text-align: center;
   justify-content: center;
 }
@@ -104,7 +104,7 @@ h3 {
 }
 
 .comedian {
-  background-color: #F2FCFB;
+  background-color: #a9b0af;
   border: 3px solid black;
   border-radius: 2%;
   margin: 2%;
@@ -156,7 +156,7 @@ img {
 }
 
 #new {
-  background-color: #F2FCFB;
+  background-color: #a9b0af;
   border: 3px solid black;
   width: 50%;
   margin-left: 25%;
