@@ -7,10 +7,10 @@ RSpec.describe 'Viewing Comedians' do
     @comic3 = Comedian.create(name: 'Three', age: 20, city:@city2)
     @comic4 = Comedian.create(name: 'Four',  age: 20, city:@city2)
 
-    @special1 = Special.create(name: "something",       runtime:10, image: "https://testcreative.co.uk/wp-content/uploads/2017/10/Test-Logo-Circle-black-transparent.png")
-    @special2 = Special.create(name: "something else",  runtime:20, image: "https://d1e4pidl3fu268.cloudfront.net/66963e4a-ccba-4fdd-ba18-d5862fb4dba7/test.png")
-    @special3 = Special.create(name: "some thing",      runtime:30, image: "http://www.orseu-concours.com/76-292-thickbox/test-epso-de-raisonnement-numerique-4-fr.jpg")
-    @special4 = Special.create(name: "some thing else", runtime:40, image: "https://d3icht40s6fxmd.cloudfront.net/sites/default/files/test-product-test.png")
+    @special1 = Special.create(title: "something",       runtime:10, image: "https://testcreative.co.uk/wp-content/uploads/2017/10/Test-Logo-Circle-black-transparent.png")
+    @special2 = Special.create(title: "something else",  runtime:20, image: "https://d1e4pidl3fu268.cloudfront.net/66963e4a-ccba-4fdd-ba18-d5862fb4dba7/test.png")
+    @special3 = Special.create(title: "some thing",      runtime:30, image: "http://www.orseu-concours.com/76-292-thickbox/test-epso-de-raisonnement-numerique-4-fr.jpg")
+    @special4 = Special.create(title: "some thing else", runtime:40, image: "https://d3icht40s6fxmd.cloudfront.net/sites/default/files/test-product-test.png")
 
     @comic1.specials << @special1
     @comic1.specials << @special2
