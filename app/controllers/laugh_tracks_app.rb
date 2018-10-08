@@ -6,7 +6,6 @@ class LaughTracksApp < Sinatra::Base
     erb :welcome
   end
 
-  
   get '/comedians' do
     comedians = Comedian.assess_params(params)
     specials  = comedians.find_specials
@@ -20,7 +19,7 @@ class LaughTracksApp < Sinatra::Base
   end
 
   post '/comedians' do
-  comedian = Comedian.create(params[:comedian])
-  redirect "comedians"
-end
+    comedian = Comedian.create(params[:comedian])
+    redirect "comedians"
+  end
 end
