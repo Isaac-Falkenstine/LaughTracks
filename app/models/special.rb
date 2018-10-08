@@ -4,4 +4,7 @@ class Special < ActiveRecord::Base
 
   belongs_to :comedian
 
+  def self.average_length
+    average(:runtime) ? average(:runtime) : 0
+  end
 end

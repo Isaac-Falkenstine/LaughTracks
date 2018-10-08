@@ -26,4 +26,14 @@ class Comedian < ActiveRecord::Base
   def self.filter_by_name(name)
     find_by_name(name)
   end
+
+  def self.average_age(params = {})
+    comics = assess_params(params)
+    comics.average(:age)
+  end
+
+  def self.cities(params = {})
+    comics = assess_params(params)
+    comics.distinct.pluck(:hometown)
+  end
 end
